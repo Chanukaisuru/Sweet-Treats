@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#home h2 {
+    color: #ffffff;
+    font-size: 50px;
+    margin-left: 650px;
+    margin-top: -15px; 
+}
+
+#home p {
+    margin-left: 700px; 
+    margin-top: -70px; 
+}
+
+#home span {
+    color: #f17468;
+}
+
+h2 {
+    padding: 50px 50px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: auto; /* Center the table */
+    border-radius: 40px 0px 40px 0px;
+    overflow: hidden; /* Ensure rounded corners are visible */
+    border: #2e2a2a;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+
+    
+}
+
+th {
+    background-color: #2e2a2a;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+th, td {
+    padding: 10px;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    height: 50px; /* Set a fixed height for better vertical alignment */
+}
+
+.menu-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-item .description {
+    max-width: 200px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 50px;
+}
+
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    transition: transform 0.2s;
+    border-radius: 8px;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Background images for sections */
+#home {
+    background: url('images/bg_image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 350px;
+    color: white;
+    padding: 20px 20px;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .gallery img {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .menu-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    .menu-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
