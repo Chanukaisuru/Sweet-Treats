@@ -6,19 +6,35 @@ body {
 }
 
 header {
-    background-color: #ff6f61;
+    background-color: #3d3a3a;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px; /* Adjust padding for spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out logo and navigation */
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space between logo and navigation */
+}
+
+.header-logo h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #e0ac1c;
+    font: normal 36px 'Cookie', cursive;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex; /* Align navigation items in a row */
 }
 
 nav ul li {
-    display: inline;
     margin: 0 10px;
 }
 
@@ -30,25 +46,37 @@ nav ul li a {
 main {
     padding: 20px;
 }
+#home {
+    background: url('images/bg-image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 350px;
+    color: white;
+    padding: 20px 20px;
+    text-align: justify;
+}
 
 #home h2 {
-    color: #ffffff;
+    color: #000000;
     font-size: 50px;
-    margin-left: 650px;
-    margin-top: -15px; 
+    margin-left: 500px;
+    margin-top: 0px; 
 }
 
 #home p {
     margin-left: 700px; 
-    margin-top: -70px; 
+    margin-top: -50px; 
+    color: #000000;
 }
 
 #home span {
-    color: #f17468;
+    color: #e0ac1c;
 }
 
 h2 {
-    padding: 50px 50px;
+    text-align: center; /* Center all h2 elements */
+    padding: 20px 0; /* Add some vertical padding */
+    font-size: 40px;
+    
 }
 
 ul {
@@ -137,25 +165,100 @@ th, td {
     transform: scale(1.1);
 }
 
-footer {
-    background-color: #ff6f61;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+
+
+
+
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    margin: auto;
+    border-radius: 10px;
 }
 
-/* Background images for sections */
-#home {
-    background: url('images/bg_image.jpg') no-repeat center center;
-    background-size: cover;
-    height: 350px;
-    color: white;
-    padding: 20px 20px;
-    text-align: justify;
+.left{
+	background: url("images/contact-image.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
 }
+
+.right{
+	padding: 25px 40px;
+}
+
+
+
+.contact-box h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #e0ac1c;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #e0ac1c;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+
+
+/* Background images for sections */
+
 
 /* The footer is fixed to the bottom of the page */
 
@@ -312,11 +415,11 @@ footer {
 }
 
 .footer-distributed .footer-icons a:hover {
-    background-color: #3F71EA;
+    background-color: #e0ac1c;
 }
 
 .footer-links a:hover {
-    color: #3F71EA;
+    color: #e0ac1c;
 }
 
 @media (max-width: 880px) {
@@ -356,5 +459,24 @@ footer {
     .menu-item img {
         width: 100%;
         margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
     }
 }
