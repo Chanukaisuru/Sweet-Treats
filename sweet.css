@@ -195,6 +195,7 @@ th, td {
 
 .right{
 	padding: 25px 40px;
+    
 }
 
 
@@ -220,6 +221,7 @@ th, td {
 	font-size: 1.1rem;
 	margin-bottom: 22px;
 	transition: .3s;
+    border-radius: 8px;
 }
 
 .field:hover{
@@ -249,36 +251,6 @@ textarea{
 .field:focus{
     border: 2px solid rgba(30,85,250,0.47);
     background-color: #fff;
-}
-
-@media screen and (max-width: 880px){
-	.contact-box{
-		grid-template-columns: 1fr;
-	}
-	.left{
-		height: 200px;
-	}
-}
-
-
-
-/* Background images for sections */
-
-
-/* The footer is fixed to the bottom of the page */
-
-footer {
-    position: fixed;
-    bottom: 0;
-}
-
-@media (max-height:800px) {
-    footer {
-        position: static;
-    }
-    header {
-        padding-top: 40px;
-    }
 }
 
 .footer-distributed {
@@ -476,6 +448,31 @@ footer {
 	}
 }
 
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
 
 @media (max-height:800px) {
     footer {
